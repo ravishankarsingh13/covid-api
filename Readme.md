@@ -10,11 +10,11 @@ We’re going to design an API using Node.js and MongoDB for the doctors of a Ho
 6) Not working? Ping me!.
 
 ## What are the Different API's in this project?
-1)`/doctors/register` → Registers a new Doctor to the hospital Database takes in madatory `username` ,`password` , and `name` of the doctor
-2) `/doctors/login` → Doctor Login with username and password, if Authenticated, Returns the JSON Web token, takes in madatory `username` and `password`  
-3) `/patients/register` → API to register a new Patient, This is a protected route only authorized doctor can create a new Patient. Takes in madatory patients id, whichis the phone number as `phone`  and `name` of the patient
-4) `/patients/:id/create_report` → API to create a report for the Patient with ID `id` . Takes in a mandatory field `Status` in it  
-5) `/patients/:id/all_reports` → To Show all the reports of a particular Patient with id `id`. unprotected Route.  
+1)`/doctors/register` → Registers a new Doctor to the hospital Database takes in madatory `username` ,`password` , and `name` of the doctor. \
+2) `/doctors/login` → Doctor Login with username and password, if Authenticated, Returns the JSON Web token, takes in madatory `username` and `password`.\
+3) `/patients/register` → API to register a new Patient, This is a protected route only authorized doctor can create a new Patient. Takes in madatory patients id, whichis the phone number as `phone`  and `name` of the patient.\
+4) `/patients/:id/create_report` → API to create a report for the Patient with ID `id` . Takes in a mandatory field `Status` in it  .\
+5) `/patients/:id/all_reports` → To Show all the reports of a particular Patient with id `id`. unprotected Route.  \
 6) `/reports/:status`  → To Show all the reports in the database with a particular `status` lets say Positive or Negative Or Quarantined etc.  
 
 
